@@ -27,26 +27,33 @@ function Header() {
                 </div>
 
                 {/* Right top nav */}
-                <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-                    <div className="cursor-pointer">
-                        <p>First</p>
-                        <p>Account & Lists</p>
+                <div className="text-white flex items-center text-xs space-x-6 mx-6 md:whitespace-nowrap">
+                    <div className="link">
+                        <p>Hi Frans Sebastian</p>
+                        <p className="font-extrabold md:text-sm">Account & Lists</p>
                     </div>
 
-                    <div className="cursor-pointer">
+                    <div className="link">
                         <p>Returns</p>
-                        <p>& Orders</p>
+                        <p className="font-extrabold md:text-sm">& Orders</p>
                     </div>
 
-                    <div className="cursor-pointer">
+                    <div className="relative link flex items-center">
+                        <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">0</span>
+
                         <ShoppingCartIcon className="h-10" />
-                        <p>Basket</p>
+                        <p className="hidden md:inline font-extrabold md:text-sm mt-2">Basket</p>
                     </div>
                 </div>
             </div>
 
             {/* Bottom nav */}
-            <div></div>
+            <div className="flex items-center bg-amazon_blue-light text-white text-sm ">
+                <p className="link flex items-center"> 
+                    <MenuIcon class="h-6 mr-1" />
+                    All
+                </p>
+            </div>
         </header>
     ) 
 }
