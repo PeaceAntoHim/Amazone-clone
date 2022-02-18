@@ -16,7 +16,7 @@ function Banner() {
               <div>
                 <img loading="lazy" src="https://links.papareact.com/gi1" alt="Banner 1" />
               </div>
-
+      
               <div>
                 <img loading="lazy" src="https://links.papareact.com/6ff" alt="Banner 2" />
               </div>
