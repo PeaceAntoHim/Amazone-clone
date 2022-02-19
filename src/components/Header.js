@@ -15,7 +15,7 @@ function Header() {
     const items = useSelector(selectItems);
 
     return (
-        <header>
+        <div className="header" style={{ position: 'sticky', top: 0, zIndex: 50}}>
         {/* Top Nav */}
             <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
                 <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
@@ -81,7 +81,7 @@ function Header() {
                 <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
                 <p className="link hidden lg:inline-flex">Health & Personal Care</p>
             </div>
-        </header>
+        </div>
     ) 
 }
 export default Header;
