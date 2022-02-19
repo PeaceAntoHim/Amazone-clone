@@ -23,6 +23,8 @@ function Checkout() {
             items: items,
             email: session.user.email
         });
+
+        // Redirect user/customer to stripe checkout
     };
 
     return (
