@@ -4,6 +4,8 @@ import {
     SearchIcon,
     ShoppingCartIcon, 
 } from "@heroicons/react/outline";
+import { signIn, signOut, useSessions } from 'next-auth/client';
+
 
 function Header() {
     return (
@@ -28,8 +30,8 @@ function Header() {
 
                 {/* Right top nav */}
                 <div className="text-white flex items-center text-xs space-x-6 mx-6 md:whitespace-nowrap">
-                    <div className="link">
-                        <p>Hi Frans Sebastian</p>
+                    <div onClick={signIn} className="cusor-pointer link">
+                        <p className="hover:underline">Hi Frans Sebastian</p>
                         <p className="font-extrabold md:text-sm">Account & Lists</p>
                     </div>
 
