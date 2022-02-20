@@ -41,6 +41,12 @@ this are GCP links to set web app config
 1) First you have to install micro and firebase-admin and made webhook.js in api couse all in api folder run in backend with node.js
 2) After you have install all you have install permission from firebase go to `console` and click `project settings` then you can go to `service accounts` to `generate new private key` and than pull thae json file to you workspace and rename that to permisson
 
+## How to test payment with dummy card payment 
+
+    use this code payment : 424242424242424
+    end exp 04/24
+    secure code: 424
+
 
 ## Using npm
 
