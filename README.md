@@ -35,7 +35,11 @@ this are GCP links to set web app config
 1) First you can go to stripe docs and got to `Stripe CLI` and than install that.
 2) Then you can run stripe.exe if you use windows in your cmd than you can write stripe login in CLI
 3) Then you can write this `stripe listen --forward-to localhost:3000/api/webhook`
-4) After that you have STRIPE_SIGNIN_SECRET=your_secret_key_you_get_from_cli
+4) After that you have STRIPE_SIGNING_SECRET=your_secret_key_you_get_from_cli
+
+## How to creating webhook
+1) First you have to install micro and firebase-admin and made webhook.js in api couse all in api folder run in backend with node.js
+2) After you have install all you have install permission from firebase go to `console` and click `project settings` then you can go to `service accounts` to `generate new private key` and than pull thae json file to you workspace and rename that to permisson
 
 
 ## Using npm
@@ -65,9 +69,10 @@ Run commands
     2). React.js
     3). Redux.js
     4). tailwindcss
-    5). firebase
+    5). firebase and firebase-admin
     6). nextAuth.js
     7). heroicons.js
     8). axios
     9). stripe
     10). Web Hooks
+    11). micro
