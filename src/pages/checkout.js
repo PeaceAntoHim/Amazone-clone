@@ -21,10 +21,15 @@ function Checkout() {
         // Call the backend to create a checkout session..
         const checkoutSession = await axios.post('/api/create-checkout-session',{
             items: items,
-            email: session.user.email
+            email: session.user.email,
         });
 
         // Redirect user/customer to stripe checkout
+        const result = await stripe.redirectToCheckout({
+            sessionId: checkoutSession.data.id
+        });
+
+        if (result.error) alert(result.error.message);
     };
 
     return (
@@ -70,7 +75,7 @@ function Checkout() {
                     {items.length > 0 && (
                         <>
                             <h2 className="whitespace-nowrap">
-                                Subtotal ({items.length} items):    {" "}
+                                Subtotal ({items.length} items):{" "}
                                 <span className="font-bold">
                                     <Currency quantity={total} currency="IDR" />
                                 </span>

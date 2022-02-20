@@ -24,6 +24,16 @@ this are GCP links to set web app config
 1) first you go to APIs & Services and click the credentials added new authorized link javascript origins you can added http://localhosst:3000
 2) and create URIs http://localhost:3000/api/auth/callback/google
 
+
+## How use stripe into your app
+1). you can go to this link https://stripe.com/ to see the fiture and what you can get from this app
+2). Click unto developers mode and see after dropdown you can click Documentation check to `stripe checkout` in sidebar link to get guide made app with stripe. Than you can click `Accept a payment`
+3). That have a guide how to set up stripe in your workspace.
+
+
+
+
+
 ## Using npm
 
 Run commands
@@ -45,6 +55,15 @@ Run commands
 3) ```yarn run dev```
 
 
-### If you see the window below then you are set to build AMAZON 2.0!
+### What tech i us to build AMAZON 2.0!
 
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
+    1). Next.js
+    2). React.js
+    3). Redux.js
+    4). tailwindcss
+    5). firebase
+    6). nextAuth.js
+    7). heroicons.js
+    8). axios
+    9). stripe
+    10). Web Hooks
