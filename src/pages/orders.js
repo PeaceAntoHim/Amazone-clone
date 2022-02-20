@@ -1,6 +1,7 @@
 import moment from 'moment';
 import db from '../../firebase';
 import Header from '../components/Header';
+import Order from '../components/Order';
 import { useSession, getSession } from 'next-auth/client';
 
 function Orders({ orders }) {
@@ -17,13 +18,25 @@ function Orders({ orders }) {
                 </h1>
 
                 {session ? (
-                    <h2>x Orders</h2>
+                    <h2>{orders.length} Orders</h2>
                 ) : (
                     <h2>Please Sign in to see your orders</h2>
                 )}
 
                 <div clssName="mt-5 space-y-4">
-
+                    {orders?.map(
+                        ({id, amount, amountShipping, items, timestamp, images} 
+                        ) => (
+                            <Order 
+                                key={id}
+                                id={id}
+                                amount={amount}
+                                amountShipping={amountShipping}
+                                items={items}
+                                timestamp={timestamp}
+                                images={images}
+                            />
+                    ))}
                 </div>
             </main>
         </div>
