@@ -47,6 +47,10 @@ this are GCP links to set web app config
     end exp 04/24
     secure code: 424
 
+## How to get webhook from stripe
+you have got admin dashboard and go to webhooks and add endpoints add your URL endpoint and than select event
+pick checkout.session.completed
+
 
 ## Using npm
 
