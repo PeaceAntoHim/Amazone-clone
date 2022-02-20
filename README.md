@@ -31,7 +31,11 @@ this are GCP links to set web app config
 3). That have a guide how to set up stripe in your workspace.
 
 
-
+## How to integrating Stripe CLI
+1) First you can go to stripe docs and got to `Stripe CLI` and than install that.
+2) Then you can run stripe.exe if you use windows in your cmd than you can write stripe login in CLI
+3) Then you can write this `stripe listen --forward-to localhost:3000/api/webhook`
+4) After that you have STRIPE_SIGNIN_SECRET=your_secret_key_you_get_from_cli
 
 
 ## Using npm
