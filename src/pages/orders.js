@@ -23,7 +23,7 @@ function Orders({ orders }) {
                     <h2>Please Sign in to see your orders</h2>
                 )}
 
-                <div clssName="mt-5 space-y-4">
+                <div className="mt-5 space-y-4">
                     {orders?.map(
                         ({id, amount, amountShipping, items, timestamp, images} 
                         ) => (
